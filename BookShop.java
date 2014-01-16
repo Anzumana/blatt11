@@ -1,3 +1,8 @@
+/* public vs private Variables
+ * private variables are only visible in the class in which we defined them. meaning that only the methods belonging to our class can access those variables.
+ * public variables on the other hand can be accessed by any class. if we are talking about public variables of objects we use the . operator. 
+ *  
+ */
 public class BookShop{
 
 	Book[] Inventory;
