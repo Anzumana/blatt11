@@ -1,18 +1,14 @@
 public class Book{
 	String titel;
-	String isbnNumber;
+	String isbn;
 	double price;
-	Book(){
-		System.out.println("Created a new Book Object");
 		
-	}
 	public String toString(){
-		System.out.println("Test of to String");
-		return "Book(Sprechen Sie Java,"+ isbnNumber +"," + price+ ")";
+		return "Book(" + titel +" ,"+ isbn+"," + price+ ")";
 	}
-	Book(String titel,String isbnNumber, double price){
+	Book(String titel,String isbn, double price){
 		this.titel = titel;
-		this. isbnNumber = isbnNumber;
+		this.isbn= isbn;
 		this.price = price;
 	}
 
