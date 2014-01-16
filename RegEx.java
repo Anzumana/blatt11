@@ -18,6 +18,24 @@ class RegEx{
 		} else {
 			System.out.println("String passt nicht");
 		}
+		In.open("Speiseplan.html");
+		String s1 ="";
+		while(!s1.equals("</html>")){
+			s1 = In.readLine();
+			// if pattern matches <tr>...</tr>	
+			System.out.println(s1);
+		}
+		Pattern pattern1 = Pattern.compile(".");
+		Matcher matcher1 = pattern1.matcher(s1);
+		boolean result1 = matcher1.matches();
+		if(result1){
+			System.out.println("String passt");
+			System.out.println(matcher1.group(1));
+		} else {
+			System.out.println("String passt nicht");
+		}
+		In.close();
 
 	}
 }
+
